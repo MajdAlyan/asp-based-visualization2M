@@ -1,0 +1,55 @@
+{
+  "Solver": "clingo version 5.4.1",
+  "Input": [
+    "instances/test.lp","encodings/encoding_binding.lp"
+  ],
+  "Call": [
+    {
+      "Witnesses": [
+        {
+          "Value": [
+            "bind(m1x2,t1,p2)", "bind(m2x2,t2,p3)", "bind(m3x4,t3,p4)", "bind(m4x4,t4,p4)", "bind(m5x3,t5,p3)"
+          ]
+        },
+        {
+          "Value": [
+            "bind(m1x2,t1,p2)", "bind(m2x2,t2,p3)", "bind(m3x4,t3,p4)", "bind(m4x4,t4,p4)", "bind(m5x1,t5,p1)"
+          ]
+        },
+        {
+          "Value": [
+            "bind(m1x2,t1,p2)", "bind(m2x2,t2,p3)", "bind(m3x4,t3,p4)", "bind(m4x4,t4,p4)", "bind(m5x2,t5,p2)"
+          ]
+        },
+        {
+          "Value": [
+            "bind(m1x1,t1,p1)", "bind(m2x2,t2,p3)", "bind(m3x4,t3,p4)", "bind(m4x4,t4,p4)", "bind(m5x3,t5,p3)"
+          ]
+        },
+        {
+          "Value": [
+            "bind(m1x1,t1,p1)", "bind(m2x2,t2,p3)", "bind(m3x4,t3,p4)", "bind(m4x4,t4,p4)", "bind(m5x1,t5,p1)"
+          ]
+        },
+        {
+          "Value": [
+            "bind(m1x1,t1,p1)", "bind(m2x2,t2,p3)", "bind(m3x4,t3,p4)", "bind(m4x4,t4,p4)", "bind(m5x2,t5,p2)"
+          ]
+        }
+      ]
+    }
+  ],
+  "Result": "SATISFIABLE",
+  "Models": {
+    "Number": 6,
+    "More": "no"
+  },
+  "Calls": 1,
+  "Time": {
+    "Total": 0.001,
+    "Solve": 0.000,
+    "Model": 0.000,
+    "Unsat": 0.000,
+    "CPU": 0.001
+  }
+}
